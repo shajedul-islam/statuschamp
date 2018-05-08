@@ -5,6 +5,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * Spring MVC @Controller returns model object to the view.
+ * Therefore we'd need to define @ResponseBody to the resources in order for them
+ * to write the object directly to the response body as json/xml.
+ *
+ * Using @RestController we can achieve this out of the box.
+ *
+  */
 @RestController
 public class GreetingController {
 
